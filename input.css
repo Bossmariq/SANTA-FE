@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.big-heading {
+  @apply font-serif text-3xl md:text-4xl tracking-wide capitalize;
+}
+
+/* HAMBURGER MENU */
+
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 3px;
+  top: 0;
+  left: 0;
+  background: #e8e6e7;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+/* PRODUCT GALLERY */
+
+.home-page-gallery-btn {
+  @apply transition-all duration-300 hover:scale-95 bg-primary px-4 py-2 rounded-xl text-gray-50 focus:opacity-90 active:opacity-90;
+}
+
+.card-carousel {
+  @apply z-10 relative my-0 mx-auto w-full h-[350px] min-w-[600px];
+}
+
+.card-carousel {
+  --card-width: 80%;
+  --card-max-width: 280px;
+  --card-height: 350px;
+  --carousel-min-width: 600px;
+  transition: filter 0.3s ease;
+}
+
+@media screen and (max-width: 640px) {
+  .card-carousel {
+    margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2);
+  }
+}
+
+.card-carousel.smooth-return {
+  transition: all 0.2s ease;
+}
+
+.card-carousel .card {
+  @apply bg-text w-[80%] max-w-[280px] text-center py-2 
+  px-2 min-w-[250px] h-[350px] absolute my-0 mx-auto text-gray-900 rounded-2xl flex flex-col;
+}
+
+.card-carousel .card {
+  transition: inherit;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 1em;
+  filter: brightness(0.9);
+}
+
+.card.highlight {
+  filter: brightness(1);
+}
+
+/* OUR TEAM PAGE */
+
+/* AGENTS */
+
+.agents-card-grid-boxes {
+  @apply flex items-center p-4 space-x-3 rounded-lg bg-tertiary shadow-lg shadow-tertiary md:justify-between justify-start;
+}
+
+/* PROJECT GALLERY */
+
+.gallery-img {
+  @apply w-full rounded-lg md:rounded-3xl group-hover:cursor-pointer transition-all duration-700 group-hover:scale-95;
+}
+.gallery-img-overlay {
+  @apply absolute bg-gradient-to-t from-black to-transparent w-full h-full transition-all duration-700 top-0 left-0 rounded-lg md:rounded-3xl group-hover:scale-95;
+}
+
+.gallery-bg-heading {
+  @apply font-serif text-xl lg:text-3xl tracking-wide capitalize text-white;
+}
+.current-projects-under-construction {
+  @apply absolute top-6 text-black right-6 bg-tertiary p-2 rounded-lg;
+}
+.UC-text {
+  @apply uppercase font-semibold tracking-wider text-xs;
+}
+
+.gallery-text-box {
+  @apply flex px-4 lg:px-12 flex-col space-y-1 lg:space-y-3;
+}
+
+.gallery-btn {
+  @apply capitalize border-2 border-primary text-sm md:text-lg text-secondary transition-all duration-300 hover:scale-95 font-semibold w-3/6 md:w-1/5 py-2 hover:bg-primary hover:text-gray-50;
+}
+
+/* CUSTOM FINANCING */
+.custom-financing-text-box {
+  @apply flex flex-col space-y-3 text-left max-w-3xl;
+}
+.custom-financing-header {
+  @apply text-2xl md:text-3xl font-medium capitalize;
+}
+.custom-financing-text {
+  @apply text-sm md:text-[16px] leading-6 md:leading-7;
+}
+.rightside-bar-overlay {
+  @apply absolute w-full h-full top-0 left-0 bg-black opacity-70;
+}
+.rightside-bar-textbox {
+  @apply flex flex-col space-y-2 items-center justify-center h-full text-center text-white hover:translate-y-6 transition-all duration-500;
+}
+
+/* CONTACT US */
+
+.contact-subheading {
+  @apply uppercase text-center text-white text-xl font-semibold py-3 tracking-wider;
+}
+.contact-btn {
+  @apply text-white bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 transition-all duration-500 focus:outline-none font-medium text-sm w-full py-2.5 text-center;
+}
+.contact-icon-box {
+  @apply border-2 border-text rounded-full w-10 h-10 flex items-center justify-center;
+}

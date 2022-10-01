@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/c10da0660c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>SANTA FE HOMES AND REAL ESTATE MANAGEMENT INT'L</title>
+  </head>
+  <body class="bg-text font-sans overflow-y-visible" id="body">
+    <div class="carousel-header-1 h-[23rem] md:h-[27rem] relative">
+      <div class="swiper mySwiper h-[27rem] hidden md:inline-block">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide bg-slide-one bg-cover bg-bottom">
+            <div class="relative w-full h-full">
+              <div class="bg-black absolute h-full w-full opacity-50"></div>
+            </div>
+          </div>
+          <div class="swiper-slide bg-slide-two bg-cover bg-top">
+            <div class="relative w-full h-full">
+              <div class="bg-black absolute h-full w-full opacity-30"></div>
+            </div>
+          </div>
+          <div class="swiper-slide bg-slide-three bg-cover bg-bottom">
+            <div class="relative w-full h-full">
+              <div class="bg-black absolute h-full w-full opacity-50"></div>
+            </div>
+          </div>
+          <div class="swiper-slide bg-slide-four bg-cover bg-center">
+            <div class="relative w-full h-full">
+              <div class="bg-black absolute h-full w-full opacity-40"></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next hidden"></div>
+        <div class="swiper-button-prev hidden"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <!-- MOBILE SCREEN CAROUSEL -->
+      <div class="swiper h-[23rem] mySwiper md:hidden">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide bg-slide-v1 bg-cover bg-bottom">
+            <div class="relative w-full h-full">
+              <div class="bg-black absolute h-full w-full opacity-50"></div>
+            </div>
+          </div>
+          <div class="swiper-slide bg-slide-v2 bg-cover bg-bottom">
+            <div class="relative w-full h-full">
+              <div class="bg-black absolute h-full w-full opacity-40"></div>
+            </div>
+          </div>
+          <div class="swiper-slide bg-slide-v3 bg-cover bg-bottom">
+            <div class="relative w-full h-full">
+              <div class="bg-black absolute h-full w-full opacity-60"></div>
+            </div>
+          </div>
+          <div class="swiper-slide bg-slide-v4 bg-cover bg-center">
+            <div class="relative w-full h-full">
+              <div class="bg-black absolute h-full w-full opacity-50"></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next hidden"></div>
+        <div class="swiper-button-prev hidden"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <!-- NAV BAR -->
+
+    <nav class="absolute top-0 left-0 w-full h-[50%] z-10">
+      <!-- NAVBAR FOR BIG SCREENS -->
+      <div
+        class="hidden md:flex pt-6 pb-20 container justify-between text-white font-sans items-center mx-auto"
+      >
+        <div class="text-2xl font-semibold flex flex-col items-center">
+          <img src="images/logo.png" alt="" />
+          <a href="index.html">SANTA FE HOMES</a>
+        </div>
+        <div class="space-x-12 flex">
+          <div class="">
+            <a href="index.html" class="menu font-medium hover:text-gray-300"
+              >HOME</a
+            >
+          </div>
+          <div class="relative" id="dropdown">
+            <button
+              id="dropdownNavbarLink"
+              data-dropdown-toggle="dropdownNavbar"
+              class="flex justify-between items-center w-full font-medium hover:text-gray-300 mr-2"
+            >
+              ABOUT US
+              <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <!-- Dropdown menu -->
+            <div
+              id="dropdownNavbar"
+              class="flex h-0 duration-700 transition-all overflow-hidden absolute z-10 w-44 bg-text font-medium rounded divide-y divide-gray-100 shadow"
+            >
+              <ul
+                class="w-full text-sm h-36 text-secondary"
+                aria-labelledby="dropdownLargeButton"
+              >
+                <li>
+                  <a
+                    href="our-story.html"
+                    class="block w-full px-6 py-3 hover:bg-gray-100"
+                    >Our Story</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="our-team.html"
+                    class="block px-6 py-3 border-y border-gray-300 hover:bg-gray-100"
+                    >Our Team</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="our-services.html"
+                    class="block px-6 py-3 hover:bg-gray-100"
+                    >Our Services</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="">
+            <a
+              href="financing.html"
+              class="menu font-medium hover:text-gray-300"
+              >FINANCING</a
+            >
+          </div>
+          <div class="">
+            <a
+              href="#"
+              class="menu contact-page-btn font-medium hover:text-gray-300"
+              >CONTACT US</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- SMALL SCREEN MENU -->
+      <div class="absolute top-0 left-0 w-full h-[70%] z-10 md:hidden">
+        <div class="relative container mx-auto">
+          <div class="flex justify-between items-center pt-4 pb-8 px-4">
+            <div
+              class="text-2xl text-white font-semibold flex flex-col items-start"
+            >
+              <img src="images/logo.png" class="z-30" alt="" />
+              <a href="index.html">SANTA FE HOMES</a>
+            </div>
+
+            <!-- HAMBURGER MENU -->
+            <button
+              id="menu-btn"
+              class="block z-30 hamburger group lg:hidden focus:outline-none"
+              type="button"
+            >
+              <span class="hamburger-top group-hover:bg-tertiary"></span>
+              <span class="hamburger-middle group-hover:bg-tertiary"></span>
+              <span class="hamburger-bottom group-hover:bg-tertiary"></span>
+            </button>
+          </div>
+        </div>
+
+        <div
+          id="mySidenav"
+          class="sidenav flex flex-col h-full w-0 fixed z-20 left-0 top-0 bg-primary overflow-hidden pt-28 transition-all duration-500 space-y-16 text-xl text-text"
+        >
+          <a href="index.html" class="hover:text-tertiary w-1/2 px-8">HOME</a>
+          <div id="mobile-menu1" class="w-1/2">
+            <a href="#" class="hover:text-tertiary relative px-8"
+              >ABOUT US <i class="fa-solid fa-angle-down"></i>
+              <div
+                class="relative left-12 top-0 h-0 overflow-hidden transition-all duration-700 rounded-md"
+                id="mobile"
+              >
+                <div
+                  class="flex rounded-md w-full h-44 flex-col text-lg bg-text text-secondary"
+                >
+                  <a href="our-story.html" class="px-8 hover:bg-gray-100 py-2"
+                    >Our Story</a
+                  >
+                  <a href="our-team.html" class="px-8 hover:bg-gray-100 py-2"
+                    >Our Team</a
+                  >
+                  <a
+                    href="our-services.html"
+                    class="px-8 hover:bg-gray-100 py-2"
+                    >Our Services</a
+                  >
+                </div>
+              </div>
+            </a>
+          </div>
+          <a href="financing.html" class="hover:text-tertiary w-1/2 px-8"
+            >FINANCING</a
+          >
+          <a href="#" class="hover:text-tertiary contact-page-btn w-1/2 px-8"
+            >CONTACT US</a
+          >
+        </div>
+      </div>
+
+      <!-- NAVBAR CONTENT -->
+
+      <div
+        class="container z-30 px-4 mx-auto tracking-wider leading-10 text-white"
+      >
+        <div
+          class="text-3xl md:text-5xl max-w-sm md:max-w-xl pt-48 md:pt-8 font-serif capitalize"
+        >
+          this is santa FE homes
+        </div>
+        <div class="font-sans text-2xl pt-2 md:pt-4 max-w-lg">
+          Luxury Home Design Is Our Passion
+        </div>
+      </div>
+    </nav>
+
+    <!-- CONTACT US PAGE -->
+    <section
+      id="contact-page"
+      class="fixed h-full pb-14 w-0 left-0 top-0 overflow-x-hidden transition-all duration-500 z-20"
+    >
+      <div
+        class="absolute h-[60rem] md:h-[50rem] w-full left-0 top-0 bg-primary2 opacity-90"
+      ></div>
+      <!-- HAMBURGER MENU -->
+      <div class="relative flex justify-end">
+        <a
+          href="#"
+          onclick="return false"
+          id="contact-close-btn"
+          class="z-40 top-4 md:top-8 text-white absolute right-3 md:right-6 px-4 py-4"
+          ><i class="fa-regular fa-circle-xmark text-3xl md:text-5xl z-40"></i
+        ></a>
+      </div>
+
+      <div
+        class="flex bg-transparent flex-col text-white h-full w-full pt-4 space-y-6 md:space-y-12 px-4 md:px-12 mx-auto"
+      >
+        <div class="flex z-30 text-center flex-col space-y-4">
+          <p class="text-xl">SANTA FE</p>
+          <h2 class="uppercase text-3xl md:text-5xl font-serif tracking-widest">
+            contact us
+          </h2>
+        </div>
+        <div
+          class="flex z-30 px-4 md:px-20 flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6"
+        >
+          <div class="w-full md:w-1/2">
+            <h2 class="contact-subheading">online inquiry</h2>
+            <form name="form1">
+              <div class="flex flex-col space-y-3">
+                <div>
+                  <input
+                    type="text"
+                    name="name"
+                    id="first_name"
+                    class="bg-text outline-none input text-gray-900 block w-full p-2.5 border-2"
+                    placeholder="NAME"
+                    required=""
+                  />
+                </div>
+                <div>
+                  <input
+                    type="email"
+                    id="email-input"
+                    name="text1"
+                    class="bg-text outline-none text-gray-900 input block w-full p-2.5 border-2"
+                    placeholder="EMAIL"
+                    required=""
+                  />
+                </div>
+                <div>
+                  <input
+                    type="number"
+                    id="phone_num"
+                    class="bg-text outline-none text-gray-900 input block w-full p-2.5 border-2"
+                    placeholder="PHONE"
+                    required=""
+                  />
+                </div>
+
+                <select
+                  id="countries"
+                  class="bg-text outline-none text-gray-900 input block w-full p-2.5 border-2"
+                  required=""
+                >
+                  <option selected="" value="">Select An Interest</option>
+                  <option value="US">Homeshopper</option>
+                  <option value="CA">Realtor</option>
+                  <option value="FR">Home Owner</option>
+                  <option value="DE">Others</option>
+                </select>
+                <select
+                  id="countries"
+                  class="bg-text outline-none text-gray-900 input block w-full p-2.5 border-2"
+                  required=""
+                >
+                  <option selected="" value="">
+                    Choose your Desired Budget
+                  </option>
+                  <option value="US">$1M - $15M</option>
+                  <option value="CA">$16M - $30M</option>
+                  <option value="FR">$31M - $50M</option>
+                  <option value="DE">$50M +</option>
+                </select>
+                <select
+                  id="countries"
+                  class="bg-text outline-none text-gray-900 input block w-full p-2.5 border-2"
+                  required=""
+                >
+                  <option selected="" value="">Location Of Interest</option>
+                  <option value="US">California</option>
+                  <option value="CA">Ohio</option>
+                  <option value="FR">Illnois</option>
+                  <option value="DE">Others</option>
+                </select>
+
+                <textarea
+                  id="message"
+                  rows="4"
+                  class="bg-text outline-none text-gray-900 input block w-full p-2.5 border-2"
+                  placeholder="Your message..."
+                  required=""
+                ></textarea>
+              </div>
+              <div class="w-1/3 mx-auto flex justify-center py-4">
+                <button
+                  type="submit"
+                  id="contact-submit"
+                  class="contact-btn"
+                  onclick="ValidateEmail(document.form1.text1)"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+          <div
+            class="flex flex-col space-y-5 text-text text-center w-full md:w-1/2"
+          >
+            <h2 class="contact-subheading">contact details</h2>
+            <!-- <p class="italic">310.285.7508</p>
+            <div class="flex flex-col space-y-1 italic">
+              <p>Mon - Fri, 9 am - 6 pm</p>
+              <p>301 N Canon Dr., Suite R-05 Beverly Hills, CA 90210</p>
+            </div>
+            <div class="flex flex-col space-y-1 italic">
+              <p>Coldwell Banker Residential Brokerage</p>
+              <p>Beverly Hills Real Estate Agent</p>
+              <p>CA DRE# 00526877</p>
+            </div> -->
+            <div class="h-[1px] w-3/4 mx-auto bg-text"></div>
+
+            <!-- CONTACT SOCIAL MEDIA ICONS -->
+            <div class="flex space-x-4 justify-center">
+              <div class="contact-icon-box">
+                <i class="fa-brands fa-facebook-f fa-xl"></i>
+              </div>
+              <div class="contact-icon-box">
+                <i class="fa-brands fa-instagram fa-xl"></i>
+              </div>
+              <div class="contact-icon-box">
+                <i class="fa-brands fa-twitter fa-xl"></i>
+              </div>
+              <div class="contact-icon-box">
+                <i class="fa-brands fa-linkedin-in fa-xl"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT WE OFFER -->
+    <section class="py-8 md:py-16">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center space-x-0 md:space-x-12">
+          <div class="h-full w-1/2 hidden lg:block">
+            <img
+              src="images/our-services-image-1.jpg"
+              class="rounded-2xl"
+              alt=""
+            />
+          </div>
+          <div class="h-full w-1/2 hidden md:block lg:hidden">
+            <img
+              src="images/home-intro-vertical.jpg"
+              class="rounded-2xl"
+              alt=""
+            />
+          </div>
+          <div class="flex-auto w-1/2">
+            <div class="flex flex-col space-y-6">
+              <h1 class="big-heading">what we are and what you get from us</h1>
+              <p class="text-gray-700">
+                Santa FE Homes is an exceptional real estate team that
+                represents properties of distinction in many parts of the world.
+                Santa FE has received accolades both nationally and
+                internationally and continues to be the region’s top real estate
+                team
+              </p>
+              <div class="flex flex-col space-y-4 text-gray-50">
+                <div
+                  class="w-full flex justify-between items-center py-2 px-6 bg-primary rounded-lg shadow-sm shadow-primary"
+                >
+                  <p class="">Best price in the market</p>
+                  <i
+                    class="fa-sharp text-tertiary text-2xl fa-solid fa-circle-check"
+                  ></i>
+                </div>
+                <div
+                  class="w-full flex justify-between items-center py-2 px-6 bg-primary rounded-lg shadow-sm shadow-primary"
+                >
+                  <p class="">Over 20 experienced agents</p>
+                  <i
+                    class="fa-sharp text-tertiary text-2xl fa-solid fa-circle-check"
+                  ></i>
+                </div>
+                <div
+                  class="w-full flex justify-between items-center py-2 px-6 bg-primary rounded-lg shadow-sm shadow-primary"
+                >
+                  <p class="">Trusted properties</p>
+                  <i
+                    class="fa-sharp text-tertiary text-2xl fa-solid fa-circle-check"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR SERVICES -->
+    <section class="md:py-16 py-8 bg-text mb-4 md:mb-0">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col space-y-6 text-center max-w-4xl mx-auto">
+          <div class="big-heading">our services</div>
+          <p class="text-gray-800 tracking-wide leading-6">
+            Santa FE Homes is a luxury real estate and construction company that
+            is dedicated to redefining the luxury real estate industry with
+            transformative experiences through intricately designed
+            architecture. Our services cater for those who have a refined taste
+            for the finer things in life and value opulence in its truest and
+            rarest form. From foundation to chandelier, we search globally for
+            the world’s most renowned thought leaders in architecture, art and
+            innovation in designing the masterpieces we create. Associated
+            exclusively with bespoke and iconic structures, we offer a lifestyle
+            only the Santa FE brand can deliver.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR CORE VALUES -->
+    <section class="py-20 bg-[#263D39]">
+      <div class="px-14 text-center text-tertiary">
+        <div class="mb-12 md:mb-20">
+          <div class="big-heading">our core values</div>
+        </div>
+        <div
+          class="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-4"
+        >
+          <div
+            class="flex flex-col space-y-3 md:space-y-4 w-full items-center px-3"
+          >
+            <img src="images/excellence.png" class="w-20 h-16" alt="" />
+            <h2 class="font-semibold text-2xl uppercase">excellence</h2>
+            <p class="text-sm">
+              Exceeding expectations is what Santa FE stands for. We set new
+              standards and beat all records for the satisfaction of our
+              clients.
+            </p>
+          </div>
+          <div
+            class="flex flex-col space-y-3 md:space-y-4 w-full items-center px-3"
+          >
+            <img src="images/diligence.png" class="w-20 h-16" alt="" />
+            <h2 class="font-semibold text-2xl uppercase">diligence</h2>
+            <p class="text-sm">
+              Going the extra mile to achieve extraordinary results is one of
+              our guiding principles. From design to execution, we meticulously
+              dot all i’s and cross all t’s to create masterpieces crafted to
+              perfection. At Santa FE, we don't do things 10% better, we do
+              things 10 times better!
+            </p>
+          </div>
+          <div
+            class="flex flex-col space-y-3 md:space-y-4 w-full items-center px-3"
+          >
+            <img src="images/integrity.png" class="w-20 h-16" alt="" />
+            <h2 class="font-semibold text-2xl uppercase">integrity</h2>
+            <p class="text-sm">
+              With every new project, we strive to be more inventive than the
+              last, through the use of latest technology, processes and a future
+              forward thinking approach.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOIN THE TEAM -->
+    <section id="join-team" class="py-20 md:py-[6rem] px-4 bg-gray-100">
+      <div class="w-full flex flex-col space-y-10 items-center justify-center">
+        <h2
+          class="font-serif text-black text-center text-2xl md:text-4xl tracking-wide capitalize"
+        >
+          We only work with the best
+        </h2>
+        <button
+          class="my-6 capitalize border-2 border-primary text-sm md:text-lg text-secondary transition-all duration-300 hover:scale-95 font-semibold rounded-3xl py-2 px-8 hover:bg-primary hover:text-gray-50"
+        >
+          <a href="our-team.html" class="capitalize"
+            >Join team <i class="ml-4 fa-solid fa-arrow-right"></i
+          ></a>
+        </button>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+
+    <footer class="py-16 bg-primary">
+      <div class="container mx-auto px-8">
+        <div
+          class="flex flex-col md:flex-row text-lg text-white items-start justify-between space-y-7 md:space-y-0"
+        >
+          <div
+            class="flex flex-col items-start space-y-3 md:space-y-4 md:items-center justify-center"
+          >
+            <img src="images/logo.png" class="scale-125" alt="" />
+            <a href="index.html">
+              <p class="">SANTA FE HOMES</p>
+            </a>
+          </div>
+          <div class="flex flex-col space-y-3 md:space-y-4">
+            <h3 class="font-bold text-xl">About Us</h3>
+            <a
+              href="our-story.html"
+              class="hover:text-tertiary transition-all duration-300 hover:scale-105"
+              >Our Story</a
+            >
+            <a
+              href="our-team.html"
+              class="hover:text-tertiary transition-all duration-300 hover:scale-105"
+              >Our Team</a
+            >
+            <a
+              href="our-services.html"
+              class="hover:text-tertiary transition-all duration-300 hover:scale-105"
+              >Our Services</a
+            >
+          </div>
+          <div class="flex flex-col space-y-3 md:space-y-4">
+            <h3 class="font-bold text-xl">Enquiries</h3>
+            <a
+              href="financing.html"
+              class="hover:text-tertiary transition-all duration-300 hover:scale-105"
+              >Financing</a
+            >
+            <a
+              href="#"
+              onclick="return false;"
+              class="hover:text-tertiary contact-page-btn transition-all duration-300 hover:scale-105"
+              >Contact Us</a
+            >
+          </div>
+          <div class="flex space-x-3 text-tertiary text-2xl">
+            <i
+              class="fa-brands fa-twitter hover:scale-110 transition-all duration-300"
+            ></i>
+            <i
+              class="fa-brands fa-facebook hover:scale-110 transition-all duration-300"
+            ></i>
+            <i
+              class="fa-brands fa-instagram hover:scale-110 transition-all duration-300"
+            ></i>
+            <i
+              class="fa-solid fa-envelope hover:scale-110 transition-all duration-300"
+            ></i>
+          </div>
+        </div>
+        <div class="bg-tertiary w-full h-[2px] my-6 opacity-50"></div>
+
+        <div class="text-center text-text text-xs" id="lastStatement"></div>
+      </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
