@@ -108,5 +108,5 @@ function showContactPage() {
 // DYNAMIC YEAR
 lastStatement.innerText = `@ ${newDate} Santa FE Homes. All Rights Reserved. Site Designed By: `;
 lastStatement.innerHTML +=
-  "<span class='text-white text-sm'>Onwuzurike Victor Uzoma.</span>";
+  "<span class='text-white text-sm'>BM TECH.</span>";
 
