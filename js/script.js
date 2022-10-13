@@ -29,7 +29,9 @@ function isEmpty() {
       return false;
     } else {
       allInput[i].classList.remove("border-2");
-      allInput[i].classList.remove("border-green-600");
+      allInput[i].classList.remove("border-red-600");
+      allInput[i].value = '';
+      window.location.reload()
     }
   }
 }
