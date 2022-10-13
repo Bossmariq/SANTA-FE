@@ -31,9 +31,6 @@ function isEmpty(e) {
       allInput[i].classList.remove("border-2");
       allInput[i].classList.remove("border-red-600");
     }
-      allInput[i].value = '';
-      window.location.reload()
-      e.preventDefault();
   }
 }
 
