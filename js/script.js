@@ -21,7 +21,7 @@ let lastStatement = document.getElementById("lastStatement");
 
 contactSubmit.addEventListener("click", isEmpty);
 
-function isEmpty() {
+function isEmpty(e) {
   for (var i = 0, len = allInput.length; i < len; i++) {
     if (allInput[i].value === "") {
       allInput[i].classList.add("border-2");
@@ -32,6 +32,7 @@ function isEmpty() {
       allInput[i].classList.remove("border-red-600");
       allInput[i].value = '';
       window.location.reload()
+      e.preventDefault();
     }
   }
 }
